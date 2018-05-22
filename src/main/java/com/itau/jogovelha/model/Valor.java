@@ -1,4 +1,4 @@
-package com.itau.jogovelha.elemento;
+package com.itau.jogovelha.model;
 
 public enum Valor {
 	VAZIO(" "),
