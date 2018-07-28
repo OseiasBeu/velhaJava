@@ -50,7 +50,7 @@ public class Tabuleiro {
         if(casas[0][2] == casas[1][1] && casas[1][1] == casas[2][0] && casas[1][1] != Valor.VAZIO.getValor()){
             return true;
         }
-
+        
         return false;
     }
 

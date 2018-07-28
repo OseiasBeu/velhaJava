@@ -14,17 +14,18 @@ public class JogoController {
 
 	Rodada rodada = new Rodada("Jogador 1", "Jogador 2");
 
-	@RequestMapping("/")
+	@RequestMapping("/jogo")
 	public @ResponseBody
 	Placar getPlacar() {
 		return rodada.getPlacar();
 	}
 
-    @RequestMapping(path = "/", method = RequestMethod.POST)
+    //@RequestMapping(path = "/jogar", method = RequestMethod.POST)
+    @RequestMapping(method = RequestMethod.POST, path = "/jogar")
     public @ResponseBody
     Placar jogar(@RequestBody Jogada jogada) {
         rodada.jogar(jogada.x, jogada.y);
-
+        
         return rodada.getPlacar();
     }
 

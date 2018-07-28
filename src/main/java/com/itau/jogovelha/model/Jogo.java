@@ -24,7 +24,9 @@ public class Jogo {
             return;
         }
 
+        
         vitoria = tabuleiro.verificarVitoria();
+       
         boolean velha = tabuleiro.verificarVelha();
 
         if(vitoria || velha){
